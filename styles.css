@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #4b00ff;
+    background: linear-gradient(
+        135deg,
+        #1600a8,
+        #4b00ff,
+        #8b00ff
+    );
+
+    overflow: hidden;
+}
+
+/* Efeito de estrelas */
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    box-shadow:
+        50px 30px white,
+        120px 80px white,
+        200px 150px white,
+        300px 50px white,
+        400px 180px white,
+        500px 100px white,
+        600px 250px white,
+        700px 80px white,
+        800px 200px white,
+        900px 120px white,
+        1000px 300px white,
+        1100px 150px white,
+        1200px 50px white,
+        1300px 220px white,
+        1400px 100px white,
+        1500px 280px white,
+        1600px 150px white,
+        1700px 50px white,
+        1800px 250px white,
+        1900px 100px white,
+        2000px 300px white;
+    
+    opacity: 0.7;
+}
+
+/* Caixa do formulário */
+
+.formulario {
+    position: relative;
+
+    width: 400px;
+
+    background-color: rgba(255, 255, 255, 0.15);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+    color: #fff;
+
+    border-radius: 16px;
+
+    padding: 35px;
+}
+
+/* Título */
+
+.formulario h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Caixas dos campos */
+
+.caixa-formulario {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.caixa-formulario input {
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    border-radius: 16px;
+
+    outline: none;
+
+    color: #fff;
+
+    background-color: rgba(255, 255, 255, 0.2);
+
+    padding: 0 45px 0 20px;
+}
+
+.caixa-formulario input::placeholder {
+    color: #fff;
+}
+
+.caixa-formulario i {
+    position: absolute;
+
+    right: 15px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 20px;
+}
+
+/* Lembrar / Esqueci a senha */
+
+.lembrar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+.lembrar label {
+    display: flex;
+    gap: 5px;
+}
+
+.lembrar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.lembrar a:hover {
+    text-decoration: underline;
+}
+
+/* Botão */
+
+.btn {
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    border-radius: 16px;
+
+    cursor: pointer;
+
+    background-color: #fff;
+    color: #4b00ff;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background-color: #eeeeee;
+}
+
+/* Registro */
+
+.registro {
+    text-align: center;
+    font-size: 14px;
+}
+
+.registro a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.registro a:hover {
+    text-decoration: underline;
+}
